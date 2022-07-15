@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Atlas</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="left-nav">
+            <div class="hamburger-icon">
+                <i class="fa-solid fa-table-cells-large"></i>
+            </div>
+            <div class="logo">
+                <h1>Atlas</h1>
+            </div>
+            <ul>
+                <li><b>Reviews</b></li>
+                <li class="dropdown">
+                    <b>News</b> <i class="fa-solid fa-angle-down"></i>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <b>Random</b> <i class="fa-solid fa-angle-down"></i>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <b>Fashion</b> <i class="fa-solid fa-angle-down"></i>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="right-nav">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </nav>
+
+    <section>
+        <div class="upper-section">
+            <div class="us-box">
+                <img src="./images/img8.jpg" alt="">
+                <div class="us-content">
+                    <h4>American sweet pancakes with honey</h4>
+                    <p>about a year ago</p>
+                </div>
+            </div>
+            <div class="us-box">
+                <img src="./images/img3.jpg" alt="">
+                <div class="us-content">
+                    <h4>How to spend a vacation in the Maldives</h4>
+                    <p>about a year ago</p>
+                </div>
+            </div>
+            <div class="us-box">
+                <img src="./images/img4.jpg" alt="">
+                <div class="us-content">
+                    <h4>Fashion & Style Tips Every Woman Should Know</h4>
+                    <p>about a year ago</p>
+                </div>
+            </div>
+            <div class="us-box">
+                <img src="./images/img2.jpg" alt="">
+                <div class="us-content">
+                    <h4>How lovely yellow is! It stands for the sun</h4>
+                    <p>about a year ago</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="lower-section">
+            <div class="ls-wrapper-1">
+                <div class="ls-box">
+                    <img src="./images/img4.jpg" alt="">
+                    <div class="ls-box-content">
+                        <p class="purple">Fashion</p>
+                        <h3>Fashion & Style Tips Every Woman Should Know</h3>
+                        <p class="time">11 months ago</p>
+                    </div>
+                </div>
+    
+                <div class="ls-box">
+                    <img src="./images/img1.jpg" alt="">
+                    <div class="ls-box-content">
+                        <p class="green">Food</p>
+                        <h3>Fast food is popular because it's convenient<h3>
+                        <p class="time">about a year ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ls-wrapper-2">
+                <div class="ls-box">
+                    <img src="./images/img2.jpg" alt="">
+                    <div class="ls-box-content big">
+                        <p class="purple">Fashion</p>
+                        <h3>How lovely yellow is! It stands for the sun<h3>
+                        <p class="time">IW STUDIO - about a year ago</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="ls-wrapper-1">
+                <div class="ls-box">
+                    <img src="./images/img5.jpg" alt="">
+                    <div class="ls-box-content">
+                        <p class="orange">Tech</p>
+                        <h3>For good results must be make good plan<h3>
+                        <p class="time">about a year ago</p>
+                    </div>
+                </div>
+    
+                <div class="ls-box">
+                    <img src="./images/img3.jpg" alt="">
+                    <div class="ls-box-content">
+                        <p class="red">Sports</p>
+                        <h3>If you think lifting is dangerous, try being weak<h3>
+                        <p class="time">about a year ago</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="dark-mode">
+            <i id="icon" class="fa-solid fa-moon"></i>
+            <!-- <i class="fa-solid fa-sun"></i> -->
+        </div>
+        
+    </section>
+
+    <script>
+        var icon = document.getElementById("icon");
+        icon.onclick = function() {
+            document.body.classList.toggle("dark-theme");
+
+            if(document.body.classList.contains("dark-theme")) {
+                icon.classList = "fa-solid fa-sun";
+            } else {
+                icon.classList = "fa-solid fa-moon";
+            }
+        }
+    </script>
+</body>
+</html>
